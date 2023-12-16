@@ -157,7 +157,7 @@ border-right: 1px solid var(--color-white-2);
 @media screen and (max-width: 992px) {
     .navbar .menu {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: -100%;
     transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
@@ -172,13 +172,13 @@ border-right: 1px solid var(--color-white-2);
     color: #fff;
 }
 .navbar-brand img {
-  width: 50px;
+  width: 60px;
   }
 
 .navbar .menu.menu-active{
   left: 0;
-  color: white;
-  background-color: var(--color-black-10);
+  color: red;
+  background-color: var(--color-black-7);
 }
 .navbar .menu li {
   padding: 20px 0 20px 0;
@@ -216,7 +216,7 @@ border-right: 1px solid var(--color-white-2);
 }
 .container .alamat .about-button{
   padding: 10px 20px 10px 20px;
-  background-color: orangered;
+  background-color: var(--color-black-7);
   border: none;
   color: var(--color-white-10);
   cursor: pointer;
@@ -226,11 +226,13 @@ border-right: 1px solid var(--color-white-2);
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
+  margin-top: 160px;
   }
   .container .alamat p {
     color: var(--color-white-10);
-    font-size: 15px;
+    font-size: 10px;
+    margin-top: 10px;
   }
   
 
@@ -242,7 +244,11 @@ border-right: 1px solid var(--color-white-2);
     line-height: 1.2;
   }
   .hero h1 span#t1 {
-    font-size: 10vw;
+    font-size: 12vw;
+    line-height: 1;S
+  }
+  .hero h1 span#t1 span {
+    font-size: 19vw;
   }
   .hero h1 span#t2 {
     font-size: 4vw;
@@ -400,17 +406,13 @@ margin-top: 10px;
 }
 .services-box .box:nth-child(1) h1 {
   font-size: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-weight: 700;
   color: orangered;
 }
-.services-box .box:nth-child(1) h2 {
-  font-size: 20px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-}
+
 .services-box .box:nth-child(1) p {
-  line-height: 2;
+  line-height: 1;
   padding-top: 0px;
   color: var(--color-white-10);
 }
@@ -450,7 +452,9 @@ opacity: 0.6;
     margin-top: 50px;
   }
   .services-box .box:nth-child(2) h3 {
-    font-size: 15px;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 30px;
     }
 }
 /* Style akhir Service */
@@ -468,10 +472,7 @@ opacity: 0.6;
   padding-bottom: 10px;
   padding-top: 10px;
 }
-.portofolio-box h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
+
 /* Style awl portofolio atas */
 /* Style awl portofolio bawah */
 .porto-folio {
@@ -517,7 +518,7 @@ opacity: 0.6;
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: #25D366;
+  background-color: var(--color-black-5);
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -532,7 +533,7 @@ opacity: 0.6;
 }
 
 .fa-whatsapp {
-  font-size: 25px;
+  font-size: 50px;
 }
 
 /* Akhir Floating Whatsapp */
@@ -540,11 +541,11 @@ opacity: 0.6;
 .popup {
   width: 100%;
   height: 100vh;
-  background-color: var(--color-black-8
-  );
+  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 0;
+
 
   opacity: 0;
   visibility: hidden;
@@ -607,12 +608,14 @@ opacity: 0.6;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  background-color: #333;
+  background-color: 0;
+  border: 1px solid black;
+
   margin-top: 30px;
-  color: #fff;
+  color: black;
   font-weight: bold;
   display: inline-block;
-  padding: 14px 28px;
+  padding: 7px 14px;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -629,6 +632,7 @@ opacity: 0.6;
 #popup:target {
   opacity: 1;
   visibility: visible;
+
 }
 
 #popup:target .popup-content {
@@ -662,10 +666,14 @@ color: #555;
 
 @media screen and (max-width:992px) {
   .popup-header h1 {
-    font-size: 20px;
+    font-size: 25px;
+    margin-bottom: 0px;
+    color: #000;
   }
   .popup-header h2 {
     font-size: 10px;
+margin-top: 0px;
+margin-bottom: 0px;
 }
 .popup-content {
 width: 80%;
@@ -674,6 +682,8 @@ width: 80%;
   padding: 0px;
   width: 100%;
  font-size: 15px;
+margin-top: 1px;
+line-height: 0;
 
 }
 }
