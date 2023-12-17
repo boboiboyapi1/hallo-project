@@ -136,9 +136,9 @@ border-right: 1px solid var(--color-white-2);
 }
 .container .alamat .about-button{
   padding: 5px 10px 5px 10px;
-  background-color: orangered ;
+  background-color: var(--color-white-10);
   border: none;
-  color: var(--color-white-10);
+  color: orangered;
   cursor: pointer;
   border-radius: 1px;
   -webkit-border-radius: 1px;
@@ -296,7 +296,7 @@ border-right: 1px solid var(--color-white-2);
       padding-top: 10px;
     }
     .best-shots-box .box:nth-child(1) h1{
-      font-size: 30px;
+      font-size: 20px;
       margin-top: 20px;
       font-weight: 700;
     }
@@ -458,7 +458,7 @@ opacity: 0.6;
     padding-bottom: 30px;
     }
     .services-box .box:nth-child(1) h1 {
-      font-size: 30px;
+      font-size: 22px;
       }
       .services-box .box:nth-child(1) p {
         font-size: 10px;
@@ -526,7 +526,7 @@ opacity: 0.6;
   right: 20px;
   width: 50px;
   height: 50px;
-  background-color: var(--color-black-5);
+  background-color: green;
   color: #fff;
   border-radius: 50px;
   text-align: center;
